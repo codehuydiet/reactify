@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-input {
+  -webkit-appearance: none;
+  width: 15rem;
+  background: transparent;
+}
+
+.custom-input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #c7ccd7;
+  background: linear-gradient(to right, #fff var(--background-size), #4d4d4d var(--background-size));
+  border-radius: 5px;
+}
+
+.custom-input:hover::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #c7ccd7;
+  background: linear-gradient(to right, #4caf50 var(--background-size), #4d4d4d var(--background-size));
+  border-radius: 5px;
+}
+
+.custom-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0px;
+  width: 0px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.custom-input:hover::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 0.5px solid #4caf50;
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.custom-button {
+  padding: 0.4rem 0.75rem;
+  padding-top: 0.3rem;
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+  transition: background-color 0.3s;
+  position: relative;
+  font-weight: 500;
+}
+
+.btnLayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 1.5rem;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s;
+}
+
+.btnLayer:hover {
+  background-color: #ffffff0e;
+}
+
+.custom-recent{
+  transition: transform 0.2s;
+}
+
+.custom-recent:hover{
+  transform: scale(1.05);
+}
