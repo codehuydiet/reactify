@@ -15,7 +15,7 @@ export const listMusic = [
         ]
     },
     {
-        id: 'ng7n584hg48gfuehg45',
+        id: '52873r278t924t4',
         image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
         name: 'Vũ',
         type: 'Artist',
@@ -94,19 +94,19 @@ export const Artist = [
         name: 'marzuz'
     },
     {
-        id: '52873r278t924t4',
+        id: 'tgw34g54wg45h',
         name: 'HIEUTHUHAI'
     },
     {
-        id: '52873r278t924t4',
+        id: 'h24h5bq25h54',
         name: 'Vũ'
     },
     {
-        id: '52873r278t924t4',
+        id: 'hj46j65j426th',
         name: 'Low G'
     },
     {
-        id: '52873r278t924t4',
+        id: 'k78k3j65th2hb54',
         name: 'marzuz'
     }
 ]
@@ -114,81 +114,81 @@ export const Artist = [
 export const songs = [
     {
         id: 'song1',
-        name: 'Exit sign',
+        name: 'Exit sign1',
         data: 'vfiywegvbwe',
         author: [
             {
-                idAuthor: 'ff7834hg34g34g'
+                idAuthor: '52873r278t924t4'
             }
         ]
     },
     {
-        id: 'song1',
-        name: 'Exit sign',
+        id: 'song2',
+        name: 'Exit sign2',
         data: 'vfiywegvbwe',
         author: [
             {
-                idAuthor: 'ff7834hg34g34g'
+                idAuthor: '52873r278t924t4'
             }
         ]
     },
     {
-        id: 'song1',
-        name: 'Exit sign',
+        id: 'song3',
+        name: 'Ext sign3',
         data: 'vfiywegvbwe',
         author: [
             {
-                idAuthor: 'ff7834hg34g34g'
+                idAuthor: '52873r278t924t4'
             }
         ]
     },
     {
-        id: 'song1',
-        name: 'Exit sign',
+        id: 'song4',
+        name: 'Exit sign4',
         data: 'vfiywegvbwe',
         author: [
             {
-                idAuthor: 'ff7834hg34g34g'
+                idAuthor: 'tgw34g54wg45h'
             }
         ]
     },
     {
-        id: 'song1',
-        name: 'Exit sign',
+        id: 'song5',
+        name: 'Exit sig5n',
         data: 'vfiywegvbwe',
         author: [
             {
-                idAuthor: 'ff7834hg34g34g'
+                idAuthor: 'tgw34g54wg45h'
             }
         ]
     },
     {
-        id: 'song1',
-        name: 'Exit sign',
+        id: 'song6',
+        name: 'Exit sign6',
         data: 'vfiywegvbwe',
         author: [
             {
-                idAuthor: 'ff7834hg34g34g'
+                idAuthor: '52873r278t924t4'
             }
         ]
     },
     {
-        id: 'song1',
-        name: 'Exit sign',
+        id: 'song7',
+        name: 'Exit sign7',
         data: 'vfiywegvbwe',
         author: [
             {
-                idAuthor: 'ff7834hg34g34g'
+                idAuthor: 'tgw34g54wg45h'
             }
         ]
     },
     {
-        id: 'song1',
+        id: 'song8',
         name: 'Exit sign',
         data: 'vfiywegvbwe',
         author: [
             {
-                idAuthor: 'ff7834hg34g34g'
+                idAuthor: '52873r278t924t4'
             }
         ]
     }

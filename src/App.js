@@ -6,7 +6,7 @@ import { useStateContext } from './contexts/ContextProvider';
 function App() {
   const { isActiveSidebar } = useStateContext();
   return (
-    <div className='overflow-x-auto min-w-[49rem] relative h-[100vh] bg-main-bg text-white'>
+    <div className='overflow-x-auto min-w-[49rem] relative min-h-[35rem] h-[100vh] bg-main-bg text-white'>
       <BrowserRouter>
         <div className='min-w-[49rem] w-full h-14 flex items-center z-50 bg-main-bg'>
           <Navbar />
@@ -14,7 +14,7 @@ function App() {
         <div className='min-w-[49rem] absolute bottom-0 w-full flex items-center z-50 bg-main-bg'>
           <Playbar />
         </div>
-        <div className="flex flex-1 h-[calc(100vh-10.8rem)] self-stretch">
+        <div className="flex flex-1 min-h-[calc(35rem-10.8rem)] h-[calc(100vh-10.8rem)] self-stretch">
           <div className='relative'>
             <Sidebar className='' />
           </div>
