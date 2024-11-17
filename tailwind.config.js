@@ -8,7 +8,7 @@ module.exports = {
       backgroundColor: {
         'main-bg': '#000000',
         'under-bg': '#1f1f1f',
-        'main-bg2': '#111111'
+        'main-bg2': '#111111',
       },
       colors: {
         'icon-color': '#b3b3b3'

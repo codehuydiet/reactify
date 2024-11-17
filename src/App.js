@@ -1,8 +1,10 @@
 import './App.css';
-import { Homepage, Music, Notification, Playlist, Podcasts, UserProfile } from './pages';
-import { Navbar, Sidebar, Footer, Playbar, ThemeSetting, Button } from './components'
+import { Homepage, Music, Notification, UserProfile } from './pages';
+import { Navbar, Sidebar, Footer, Playbar, ThemeSetting, Button, Playlist, Album, Artist, Infomation } from './components'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { useStateContext } from './contexts/ContextProvider';
 function App() {
+  const { isActiveSidebar } = useStateContext();
   return (
     <div className='overflow-x-auto min-w-[49rem] relative h-[100vh] bg-main-bg text-white'>
       <BrowserRouter>
@@ -12,18 +14,26 @@ function App() {
         <div className='min-w-[49rem] absolute bottom-0 w-full flex items-center z-50 bg-main-bg'>
           <Playbar />
         </div>
-        <div className="flex h-[calc(100vh-10.8rem)] self-stretch">
-          <div className='relative '>
+        <div className="flex flex-1 h-[calc(100vh-10.8rem)] self-stretch">
+          <div className='relative'>
             <Sidebar className='' />
           </div>
-          <Routes>
-            <Route path='/' element={<Homepage />} />
-            <Route path='/music' element={<Music />} />
-            <Route path='/notification' element={<Notification />} />
-            <Route path='/playlist' element={<Playlist />} />
-            <Route path='/podcasts' element={<Podcasts />} />
-            <Route path='/userprofile' element={<UserProfile />} />
-          </Routes>
+          <div className='flex-1'>
+            <Routes>
+              <Route path='/' element={<Homepage />} />
+              <Route path='/playlist/:id' element={<Playlist />} />
+              <Route path='/album/:id' element={<Album />} />
+              <Route path='/artist/:id' element={<Artist />} />
+              <Route path='/music' element={<Music />} />
+              <Route path='/notification' element={<Notification />} />
+              <Route path='/userprofile' element={<UserProfile />} />
+            </Routes>
+          </div>
+          {isActiveSidebar ? '' : (
+            <div className='basis-1/3'>
+              <Infomation />
+            </div>
+          )}
         </div>
       </BrowserRouter>
     </div>

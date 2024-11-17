@@ -107,10 +107,36 @@
   background-color: #ffffff0e;
 }
 
-.custom-recent{
+.custom-recent {
   transition: transform 0.2s;
 }
 
-.custom-recent:hover{
+.custom-recent:hover {
   transform: scale(1.05);
+}
+
+.listname {
+  width: calc(100% - 25px);
+}
+
+.scrollList::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background-color: #5a5a5a8c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b4b4b499;
 }
