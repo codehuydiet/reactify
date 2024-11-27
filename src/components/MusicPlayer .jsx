@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react'
-import music from '../data/test_audio.mp3'
 import { FaPlayCircle } from "react-icons/fa";
 import { FaPauseCircle } from "react-icons/fa";
 import { MdSkipPrevious } from "react-icons/md";
@@ -7,8 +6,10 @@ import { MdSkipNext } from "react-icons/md";
 import { IoShuffle } from "react-icons/io5";
 import { IoMdRepeat } from "react-icons/io";
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { useStateContext } from '../contexts/ContextProvider';
 
 const MusicPlayer = () => {
+    const { activeSong, setActiveSong } = useStateContext()
     const audioRef = useRef()
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
@@ -62,12 +63,17 @@ const MusicPlayer = () => {
 
     return (
         <div className='my-4'>
-            <audio
+            {activeSong? (
+                <audio
                 ref={audioRef}
-                src={music}
+                src={activeSong.data}
                 onTimeUpdate={handleCurrentTime}
                 onLoadedMetadata={handleLoadedMetadata}
             />
+            ):(
+                ''
+            )
+            }
             <div className='gap-4 flex justify-center text-2xl text-[#b3b3b3] mb-[10px]'>
                 <TooltipComponent cssClass='custom-tooltip2' content={"Enable Shuffle"} position='TopCenter'>
                     <button className='hover:text-[#fff]'>
@@ -97,9 +103,15 @@ const MusicPlayer = () => {
             </div>
 
             <div className='flex gap-2 items-center text-[#b3b3b3] text-[11px]'>
-                <div>
-                    {Math.floor(currentTime / 60)}:{Math.floor(currentTime % 60).toString().padStart(2, '0')}
-                </div>
+                {activeSong? (
+                    <div>
+                        {Math.floor(currentTime / 60)}:{Math.floor(currentTime % 60).toString().padStart(2, '0')}
+                    </div>
+                ):(
+                    <div>
+                        -:--
+                    </div>
+                )}
                 <input
                     type="range"
                     value={currentTime * 100 / duration}
@@ -108,9 +120,15 @@ const MusicPlayer = () => {
                     style={{ '--background-size': '0%' }}
                 />
 
-                <div>
-                    {Math.floor(duration / 60)}:{Math.floor(duration % 60).toString().padStart(2, '0')}
-                </div>
+                {activeSong? (
+                    <div>
+                        {Math.floor(duration / 60)}:{Math.floor(duration % 60).toString().padStart(2, '0')}
+                    </div>
+                ):(
+                    <div>
+                        -:--
+                    </div>
+                )}
             </div>
         </div>
     )

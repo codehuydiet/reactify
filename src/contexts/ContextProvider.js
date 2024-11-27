@@ -4,12 +4,15 @@ const StateContext = createContext();
 
 export const ContextProvider = ({ children }) => {
     const [isActiveSidebar, setIsActiveSidebar] = useState(true)
+    const [activeSong, setActiveSong] = useState()
 
     return (
         <StateContext.Provider
             value={{
                 isActiveSidebar,
-                setIsActiveSidebar
+                setIsActiveSidebar,
+                activeSong,
+                setActiveSong
             }}
         >
             {children}

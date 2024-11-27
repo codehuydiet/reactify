@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { Reactify, Lib } from '../data'
 import { BiSolidHomeAlt2 } from "react-icons/bi"
 import { SearchBar } from '../components'
 import { IoNotificationsOutline } from "react-icons/io5";
+import { Usernav, Button } from '../components'
 import avt from '../data/avt.png'
 const Navbar = () => {
+  const isLogin = true
+  const [nav, setNav] = useState(true)
+  const onchange = () => {
+    setNav(!nav)
+  }
   return (
     <div className='gap-2 w-full flex items-center justify-between' >
       <div className='mx-5'>
@@ -37,9 +43,29 @@ const Navbar = () => {
           </TooltipComponent>
         </div>
         <div >
-          <TooltipComponent cssClass='custom-tooltip' content={'avatar'} position='Bottom Center'>
-            <img className='rounded-full' src={avt} alt="" width={45} height={45} />
-          </TooltipComponent>
+          {isLogin ? (
+            <TooltipComponent cssClass='custom-tooltip' content={'avatar'} position='Bottom Center'>
+              <div className='relative'>
+                <button onClick={() => onchange()}>
+                  <img className='rounded-full' src={avt} alt="" width={45} height={45} />
+                </button>
+                {nav ? (
+                  <div className='absolute right-0 mt-2'>
+                    <Usernav />
+                  </div>
+                ) : ''}
+              </div>
+            </TooltipComponent>
+          ) : (
+            <div>
+              <Link to={'/register'}>
+                <Button title={'Sign up'}></Button>
+              </Link>
+              <Link to={'/login'}>
+                <Button title={'Log in'} colors={"#fff"} textColor={"#000"}></Button>
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </div>

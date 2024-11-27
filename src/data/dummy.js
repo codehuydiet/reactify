@@ -1,76 +1,57 @@
+import AnThan from '../data/AnThan.mp3'
+import Cua from '../data/Cua.mp3'
+import HuongDuong from '../data/HuongDuong.mp3'
+import LaLung from '../data/LaLung.mp3'
+import TruocKhiEmTonTai from '../data/TruocKhiEmTonTai.mp3'
+
 export const listMusic = [
     {
-        id: '384hf348gfuewhfu34',
+        id: 'tk0tl216p',
         image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
-        name: 'list #1',
+        name: 'Name 61',
         type: 'Playlist',
-        author: 'hoang nguyen viet',
+        author: 'Name 20',
         songs: [
             {
-                idSong: 'yt9384yth9843834'
-            },
-            {
-                idSong: 'yt9384yth9843834'
+                idSong: 'song1'
             }
         ]
     },
     {
-        id: '52873r278t924t4',
+        id: 'tk0tl216p',
+        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
+        name: 'marzuz',
+        type: 'Artist',
+        author: ''
+    },
+    {
+        id: 'g7dzrwmxe',
         image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
         name: 'Vũ',
         type: 'Artist',
-        author: '',
+        author: ''
+    },
+    {
+        id: '8lc1oi99r',
+        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
+        name: 'Name 26',
+        type: 'Playlist',
+        author: 'Name 64',
         songs: [
             {
-                idSong: 'yt9384yth9843834'
-            },
-            {
-                idSong: 'yt9384yth9843834'
+                idSong: 'song3'
             }
         ]
     },
     {
-        id: 'fh20938yhg8h348gh0934',
+        id: 'imog2lf6w',
         image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
-        name: 'Bảo Tàng Của Nuối Tiếc',
+        name: 'Name 4',
         type: 'Album',
-        author: 'Vũ',
+        author: 'Name 45',
         songs: [
             {
-                idSong: 'yt9384yth9843834'
-            },
-            {
-                idSong: 'yt9384yth9843834'
-            }
-        ]
-    },
-    {
-        id: 'h9g86509hj92jg43h34h',
-        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
-        name: 'Vũ2',
-        type: 'Artist',
-        author: '',
-        songs: [
-            {
-                idSong: 'yt9384yth9843834'
-            },
-            {
-                idSong: 'yt9384yth9843834'
-            }
-        ]
-    },
-    {
-        id: '10hg208gh0284gh034h',
-        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
-        name: 'Bảo Tàng Của Nuối Tiếc2',
-        type: 'Album',
-        author: 'Vũ',
-        songs: [
-            {
-                idSong: 'yt9384yth9843834'
-            },
-            {
-                idSong: 'yt9384yth9843834'
+                idSong: 'song2'
             }
         ]
     }
@@ -88,107 +69,100 @@ export const type = [
     }
 ]
 
-export const Artist = [
+export const Artists = [
     {
-        id: '52873r278t924t4',
-        name: 'marzuz'
+        id: 'tk0tl216p',
+        name: 'marzuz',
+        follower: 46239,
+        des: 'Born in 2000 in Hanoi, Trần My Anh was nurtured by a family of musical influences who greatly inspired her to develop her own sense of music. Started from uploading covers of her favorite songs on Youtube at the age of 9 to writing her own songs at around 12 in her tiny bedroom with just a guitar, she only ever dreamed of becoming a known singer-songwriter under the name of marzuz. She believes music is her only means of communication, as an introverted kid who could never confide in anyone. In 2016, marzuz uploaded her first original song “Mai,” - a soft acoustic song where she portrayed love and vulnerability - on Soundcloud, without expecting the song would be able to travel so far along the country. People started recognizing her as marzuz and was waiting for more of her music. During the course of 2016 to 2020, she started working with producers such as Onionn., Kewtiie,… and put out a few more songs that moved the audience such as “Fortune” - a sensual future-bass track, “Nếu” - an emotional flow diving into her deep view of the world and the reality of mental illness, “3 PHÚT” - a hip-hop RnB track where she spilled honest truth about her being a 17-year-old wanting to be apart of the harsh music and entertainment industry, “Và Thế Giới Đã Mất Đi Một Người Cô Đơn”… marzuz believes in the freedom of music as in wanting to experiment with many different genres of music, but never losing the very core of her art - it being true to her feelings and experiences.'
     },
     {
-        id: 'tgw34g54wg45h',
-        name: 'HIEUTHUHAI'
+        id: 'g7dzrwmxe',
+        name: 'Vũ',
+        follower: 46284,
+        des: "I'm Vu.<br> "
+
     },
     {
-        id: 'h24h5bq25h54',
-        name: 'Vũ'
+        id: 'khf3ziy9x',
+        name: 'HIEUTHUHAI',
+        follower: 1770132,
+        des: 'ai cũng phải bắt đầu từ đâu đó'
+
     },
     {
-        id: 'hj46j65j426th',
-        name: 'Low G'
+        id: '8lc1oi99r',
+        name: 'Low G',
+        follower: 1490370,
+        des: 'Low G is a rapper, songwriter and dancer. His real name is Nguyen Hoang Long. He was born in 1997 in Hanoi, Vietnam. First, he was a dancer from Last Fire Crew, a very popular dance crew in the Vietnamese hip-hop community. Then, he tried rapping for fun and released his songs on Youtube. One day, they became viral on the Internet, which made Low G become famous and start his career as a rapper. Now he is in two rap teams named “Rap Nhà Làm” and “ Nhà Hoá Học Đống Đa”; and he is the most renowned member.<br/>Low G is well- known for being flexible to many different genres from Pop to Hip - hop.He is also good at mixing US & UK rap style with Vietnamese culture, making it interesting to listeners.People love his unique vocal, smooth rap flows and creative lyricism.His bars are catchy, funny; his wordplays are unpredictable; and his beats are fresh to Vietnamese audience.All of these factors give him a unique personality in music and make his songs go viral.'
+
     },
     {
-        id: 'k78k3j65th2hb54',
-        name: 'marzuz'
+        id: 'imog2lf6w',
+        name: 'Thắng',
+        follower: 200000,
+        des: 'Vũ Đinh Trọng Thắng: singer & songwriter Chiều Phan aka Big Phan'
     }
 ]
 
 export const songs = [
     {
         id: 'song1',
-        name: 'Exit sign1',
-        data: 'vfiywegvbwe',
+        name: 'Hướng Dương',
+        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
+        data: HuongDuong,
+        listen: '523453',
         author: [
             {
-                idAuthor: '52873r278t924t4'
+                idAuthor: "tk0tl216p"
             }
         ]
     },
     {
         id: 'song2',
-        name: 'Exit sign2',
-        data: 'vfiywegvbwe',
+        name: 'Trước khi em tồn tại',
+        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
+        data: TruocKhiEmTonTai,
+        listen: '264362',
         author: [
             {
-                idAuthor: '52873r278t924t4'
+                idAuthor: "tk0tl216p"
             }
         ]
     },
     {
         id: 'song3',
-        name: 'Ext sign3',
-        data: 'vfiywegvbwe',
+        name: 'Lạ Lùng',
+        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
+        data: LaLung,
+        listen: '234754745',
         author: [
             {
-                idAuthor: '52873r278t924t4'
+                idAuthor: "tk0tl216p"
             }
         ]
     },
     {
         id: 'song4',
-        name: 'Exit sign4',
-        data: 'vfiywegvbwe',
+        name: 'An Thần',
+        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
+        data: AnThan,
+        listen: '754624624',
         author: [
             {
-                idAuthor: 'tgw34g54wg45h'
+                idAuthor: "tk0tl216p"
             }
         ]
     },
     {
         id: 'song5',
-        name: 'Exit sig5n',
-        data: 'vfiywegvbwe',
+        name: 'Cua',
+        image: 'https://i1.sndcdn.com/avatars-000432809481-xn4prf-t240x240.jpg',
+        data: Cua,
+        listen: '4353246547',
         author: [
             {
-                idAuthor: 'tgw34g54wg45h'
-            }
-        ]
-    },
-    {
-        id: 'song6',
-        name: 'Exit sign6',
-        data: 'vfiywegvbwe',
-        author: [
-            {
-                idAuthor: '52873r278t924t4'
-            }
-        ]
-    },
-    {
-        id: 'song7',
-        name: 'Exit sign7',
-        data: 'vfiywegvbwe',
-        author: [
-            {
-                idAuthor: 'tgw34g54wg45h'
-            }
-        ]
-    },
-    {
-        id: 'song8',
-        name: 'Exit sign',
-        data: 'vfiywegvbwe',
-        author: [
-            {
-                idAuthor: '52873r278t924t4'
+                idAuthor: "g7dzrwmxe"
             }
         ]
     }
